@@ -3,20 +3,23 @@ body {
 }
 
 .TitleBox {
+	position: relative;
+	left: 0px;
+	top: 100px;
 	color: black;
 	width: 600px;
 	height: 250px;
-	padding: 14px 16px;
+	padding: 50px 50px;
 	background-color: gray;
 	font-family: Verdana;
 	font-size: 20px;
 	color: white;
+	border-radius: 25px;
 }
 
-head {
-	background-image: url("duck.jpg");
-	background-color: #cccccc;
-	background-clip: border-box;
+.top {
+	height: 600px;
+	background: #000000 url(duck.jpg) 100% 100% no-repeat;
 }
 
 .navbar {
