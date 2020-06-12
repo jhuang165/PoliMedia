@@ -1,0 +1,204 @@
+body {
+	background-color: white;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+	font-family: Impact;
+}
+
+h3 {
+	color: black;
+	font-family: Impact;
+}
+
+h2 {
+	color: black;
+	font-family: Impact;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Impact;
+	font-size: 22;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: lightgray;
+}
+
+p {
+	font-family: Helvetica;
+	font-color: black;
+}
+
+
+a {
+	display: block;
+	color: black;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: red;
+	font-family: Helvetica;
+	font-size: 20;
+}
+
+/* Change the link color to #111 (black) on hover */
+a:hover {
+	color: lightgray;
+}
+
+
+.resizedTextbox {
+	margin: auto;
+	width: 47%;
+	padding: 10px;
+}
+
+#SuggestedArticles {
+	position: absolute;
+	right: 0px;
+	width: 300px;
+	padding: 10px;
+	text-align: left;
+}
+
+#OtherNewsStories {
+	position: absolute;
+	left: 0px;
+	top: 520px;
+	width: 300px;
+	padding: 10px;
+	text-align: left;
+	display: inline-block;
+}
+
+.dividerLine {
+	display: inline-block;
+}
+
+.WitchGame {
+	display: inline-block;
+}
+
+.FirstAd {
+	position: absolute;
+	left: 0px;
+	width: 100px;
+	padding: 10px;
+	text-align: left;
+}
+.SecondAd {
+	position: absolute;
+	right: 230px;
+	width: 100px;
+	top: 540px;
+	padding: 10px;
+	text-align: right;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: white;
+	font-family: Impact;
+	font-size: 20px;
+
+}
+
+.navbar a {
+	float: left;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Impact;
+
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	font-family: Impact;
+	font-size: 20px;
+
+
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;    
+	border: none;
+	outline: none;
+	color: black;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: Impact;
+	font-size: 20px;
+
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: lightgray;
+	font-size: 20px;
+
+
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	font-family: Impact;
+	font-size: 20px;
+
+
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-family: Impact;
+	font-size: 20px;
+
+
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+	font-family: Impact;
+	font-size: 20px;
+
+
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	font-family: Impact;
+	font-size: 20px;
+
