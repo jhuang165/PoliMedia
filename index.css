@@ -3,14 +3,20 @@ body {
 }
 
 .TitleBox {
-	font-size: 16px;    
-	border-color: red;
-	border-width: 2px;
 	color: black;
+	width: 600px;
+	height: 250px;
 	padding: 14px 16px;
-	background-color: green;
+	background-color: gray;
 	font-family: Verdana;
 	font-size: 20px;
+	color: white;
+}
+
+head {
+	background-image: url("duck.jpg");
+	background-color: #cccccc;
+	background-clip: border-box;
 }
 
 .navbar {
