@@ -7,46 +7,47 @@
 		<title>Home | PoliMedia</title>
         <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
 		<!-- Font Awesome Icons -->
-		<link rel="stylesheet" href="./css/all.css">
+		<link rel="stylesheet" href="css/all.css">
 
 
 		<!-- --------- Owl-Carousel ------------------->
-		<link rel="stylesheet" href="./css/owl.carousel.min.css">
-		<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 		<!-- ------------ AOS Library ------------------------- -->
-		<link rel="stylesheet" href="./css/aos.css">
+		<link rel="stylesheet" href="css/aos.css">
 
 		<!-- Custom Style   -->
-		<link rel="stylesheet" href="./css/Style.css">
-		<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-		<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+		<link rel="stylesheet" href="css/Style.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
-		<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase.js"></script>
+    <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDctLyiArBFhvRVbasLQDB8IvUEE2o_jG8",
+    authDomain: "thepolimedianetwork.firebaseapp.com",
+    databaseURL: "https://thepolimedianetwork.firebaseio.com",
+    projectId: "thepolimedianetwork",
+    storageBucket: "thepolimedianetwork.appspot.com",
+    messagingSenderId: "487105997106",
+    appId: "1:487105997106:web:ffdd212c7e41e67d89cf2b",
+    measurementId: "G-YV1BKWT8PE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <div id="header_placeholder">
 
-			<!-- TODO: Add SDKs for Firebase products that you want to use
-			https://firebase.google.com/docs/web/setup#available-libraries -->
-			<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+        </div>
 
-			<script>
-		  // Your web app's Firebase configuration
-		  var firebaseConfig = {
-		  	apiKey: "AIzaSyBTzXH3zoNStNp1yRoQZ0QoBK741XI_6bU",
-		  	authDomain: "polimedia-8844b.firebaseapp.com",
-		  	databaseURL: "https://polimedia-8844b.firebaseio.com",
-		  	projectId: "polimedia-8844b",
-		  	storageBucket: "polimedia-8844b.appspot.com",
-		  	messagingSenderId: "987129451324",
-		  	appId: "1:987129451324:web:0238dd25eca20f3dc18439",
-		  	measurementId: "G-XWFZ2YKZDM"
-		  };
-		  // Initialize Firebase
-		  firebase.initializeApp(firebaseConfig);
-		  firebase.analytics();
-	</script>
-    <?php echo file_get_contents("header.html"); ?>
+        <script>
+        $(function(){
+        $("#header_placeholder").load("header.html");
+        });
+    </script>
 	<main>
         
     <!-- --------------------- Blog Carousel ----------------- -->
@@ -65,34 +66,34 @@
             <div class="container">
                 <div class="owl-carousel owl-theme blog-post">
                     <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                        <img src="https://static.wixstatic.com/media/bf1a22_69ba3af2be974d13b1c6ec5ba003385c~mv2.png/v1/fill/w_740,h_416,al_c,lg_1,q_90/bf1a22_69ba3af2be974d13b1c6ec5ba003385c~mv2.webp" alt="post-1">
+                        <img src="https://static.wixstatic.com/media/bf1a22_69ba3af2be974d13b1c6ec5ba003385c~mv2.png/v1/fill/w_740,h_416,al_c,lg_1,q_90/bf1a22_69ba3af2be974d13b1c6ec5ba003385c~mv2.webp">
                         <div class="blog-title">
                             <h3>Join the Editor-in-Chief of the PoliPaper, William Tan, and help provide meals for those in need!</h3>
-                            <button class="btn btn-blog">Soul & Smoke</button>
+                            <button class="btn btn-blog" onclick="window.location.href='/posts/soul-smoke.html'">Read More</button>
                             <span>3 minute read</span>
                         </div>
                     </div>
                     <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
-                        <img src="https://static.wixstatic.com/media/bf1a22_d45f4a4f24dd4816a9a8fd5302629b73~mv2.png/v1/fill/w_740,h_493,al_c,q_90,usm_0.66_1.00_0.01/bf1a22_d45f4a4f24dd4816a9a8fd5302629b73~mv2.webp" alt="post-1">
+                        <img src="https://static.wixstatic.com/media/bf1a22_d45f4a4f24dd4816a9a8fd5302629b73~mv2.png/v1/fill/w_740,h_493,al_c,q_90,usm_0.66_1.00_0.01/bf1a22_d45f4a4f24dd4816a9a8fd5302629b73~mv2.webp">
                         <div class="blog-title">
                             <h3>Raise money to provide masks for the elderly and those at risk</h3>
-                            <button class="btn btn-blog">COVID-19</button>
+                            <button class="btn btn-blog" onclick="window.location.href='/posts/money-for-masks.html/'">Read More</button>
                             <span>2 minute read</span>
                         </div>
                     </div>
                     <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
-                        <img src="polimedia.png" alt="post-1">
+                        <img src="polimedia.png">
                         <div class="blog-title">
                             <h3>Welcome to PoliMedia!</h3>
-                            <button class="btn btn-blog">Introduction</button>
+                            <button class="btn btn-blog">Read More</button>
                             <span>2 minute read</span>
                         </div>
                     </div>
                     <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
-                        <img src="polimedia.png" alt="post-1">
+                        <img src="polimedia.png">
                         <div class="blog-title">
                             <h3>Test</h3>
-                            <button class="btn btn-blog">Introduction</button>
+                            <button class="btn btn-blog">Read More</button>
                             <span>2 minute read</span>
                         </div>
                     </div>
@@ -120,14 +121,20 @@
 		</main>
 		
 
-		<?php echo file_get_contents("footer.html"); ?>
-        <script src="./js/Jquery3.4.1.min.js"></script>
+		<div id="footer_placeholder">
 
-<script src="./js/owl.carousel.min.js"></script>
+        </div>
 
-<script src="./js/aos.js"></script>
+        <script>
+        $("#footer_placeholder").load("footer.html");
+        </script>
+        <script src="js/Jquery3.4.1.min.js"></script>
 
-<script src="./js/main.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/aos.js"></script>
+
+<script src="js/main.js"></script>
 	</body>
 </html>
 

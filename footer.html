@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-    </head>
-    <body>
-        <!-- --------------------------- Footer ---------------------------------------- -->
+<head>
 
+</head>
+<body>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="about-us" data-aos="fade-right" data-aos-delay="200">
-                    <h2>About us</h2>
-                    <p>Test TEst</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>PoliMedia is a journalism network and non-profit that focuses on educating students about politics, economics, history, & philosophy and raises awareness about these issues by teaching students to form and express their own opinions.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <p>Sign up for email updates: </p>
+                <div class="form-element">
+                    <input type="email" placeholder="Email" id="em"><span onclick="subscribe()"><i class="fas fa-chevron-right"></i></span>
                 </div>
-                <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
-                    <p>Sign up for email updates: </p>
-                    <div class="form-element">
-                        <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
-                    </div>
-                </div>
+            </div>
+            <script>
+                function validateEmail(mail) {
+                    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(String(mail))) {
+                        return true;
+                    }
+                    return false;
+                }
+                function subscribe() {
+                        //alert("Hi");
+                        var eh = String(document.getElementById("em").value);
+                        if (validateEmail(eh)) {
+                            var db = firebase.firestore();
+                            db.collection("newsletter").doc(eh).set({
+                                signed: 1
+                            })
+                            alert("You have been signed up for the PoliMedia newsletter!");
+                        } else {
+                            alert("Please enter a valid email!");
+                        }
+                    }
+                </script>
             <!--<div class="instagram" data-aos="fade-left" data-aos-delay="200">
                 <h2>Instagram</h2>
                 <div class="flex-row">
@@ -38,14 +57,14 @@
                 <div>
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
-                    <a href="https://www.instagram.com/polimedianetwork/"><i class="fab fa-instagram"></i></a>
+                    <i class="fab fa-instagram"><a href="https://www.instagram.com/polimedianetwork/"></a></i>
                     <i class="fab fa-youtube"></i>
                 </div>
             </div>
         </div>
         <div class="rights flex-row">
             <h4 class="text-gray">
-                Copyright ©2020 | All rights reserved
+                Copyright PoliMedia ©2020 | All rights reserved
             </h4>
         </div>
         <div class="move-up">
@@ -54,5 +73,5 @@
     </footer>
 
     <!-- -------------x------------- Footer --------------------x------------------- -->
-    </body>
+</body>
 </html>
